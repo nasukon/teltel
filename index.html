@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>お問い合わせ・ご意見 | 公明党（構成案）</title>
+    <!-- Tailwind CSS (デザイン用) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Font Awesome (アイコン用) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+    
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#005baa', /* 公明党をイメージしたブルー */
+                        primary: '#005baa', /* 公明党ブルー */
                         secondary: '#f0f4f8',
                         accent: '#e60012',
                     }
@@ -27,7 +30,7 @@
             overflow: hidden;
         }
         .accordion-content.open {
-            max-height: 500px; /* 十分な高さを確保 */
+            max-height: 500px;
             padding-top: 1rem;
             padding-bottom: 1rem;
         }
@@ -41,7 +44,7 @@
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed tracking-wide">
 
-    <!-- ヘッダー（ダミー） -->
+    <!-- ヘッダー -->
     <header class="bg-white shadow-sm border-b-4 border-primary">
         <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold text-primary tracking-widest">KOMEITO</div>
@@ -94,7 +97,6 @@
             </h2>
             
             <div class="space-y-4">
-                <!-- FAQ Item 1 -->
                 <div class="bg-white rounded-lg shadow-sm border border-gray-200">
                     <button class="accordion-button w-full px-6 py-4 text-left font-bold text-gray-800 flex justify-between items-center focus:outline-none hover:bg-gray-50 rounded-lg">
                         <span class="flex items-center"><i class="fa-solid fa-q text-primary mr-2 opacity-70"></i> ポスターの掲示・依頼について</span>
@@ -105,7 +107,6 @@
                     </div>
                 </div>
 
-                <!-- FAQ Item 2 -->
                 <div class="bg-white rounded-lg shadow-sm border border-gray-200">
                     <button class="accordion-button w-full px-6 py-4 text-left font-bold text-gray-800 flex justify-between items-center focus:outline-none hover:bg-gray-50 rounded-lg">
                         <span class="flex items-center"><i class="fa-solid fa-q text-primary mr-2 opacity-70"></i> 新聞の遅配・誤配・お休み連絡について</span>
@@ -116,7 +117,6 @@
                     </div>
                 </div>
 
-                <!-- FAQ Item 3 -->
                 <div class="bg-white rounded-lg shadow-sm border border-gray-200">
                     <button class="accordion-button w-full px-6 py-4 text-left font-bold text-gray-800 flex justify-between items-center focus:outline-none hover:bg-gray-50 rounded-lg">
                         <span class="flex items-center"><i class="fa-solid fa-q text-primary mr-2 opacity-70"></i> 出版物・各種グッズの購入について</span>
@@ -137,7 +137,6 @@
             </h2>
             <div class="grid md:grid-cols-2 gap-6">
                 
-                <!-- 電子版 -->
                 <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-blue-400 flex flex-col justify-between">
                     <div>
                         <h3 class="font-bold text-lg mb-2 text-gray-800">公明新聞 電子版に関するお問い合わせ</h3>
@@ -152,7 +151,6 @@
                     </div>
                 </div>
 
-                <!-- 出版サービス -->
                 <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-green-500 flex flex-col justify-between">
                     <div>
                         <h3 class="font-bold text-lg mb-2 text-gray-800">出版物・グッズ等のご注文</h3>
@@ -176,7 +174,6 @@
 
         <!-- Section 4: 代表電話（コールフロー） -->
         <section class="bg-gray-800 text-white rounded-xl shadow-lg p-6 md:p-10 overflow-hidden relative">
-            <!-- 背景装飾 -->
             <i class="fa-solid fa-phone-flip absolute -bottom-10 -right-10 text-9xl text-gray-700 opacity-30 transform -rotate-12"></i>
             
             <div class="relative z-10">
@@ -198,13 +195,11 @@
                     </div>
                 </div>
 
-                <!-- コールフロー図 -->
                 <div class="mt-8">
                     <h3 class="text-lg font-bold mb-4 border-l-4 border-primary pl-3">音声ガイダンスの流れ</h3>
                     <p class="text-sm text-gray-300 mb-4">お電話がつながりましたら、音声案内に従ってご希望の番号（プッシュ信号）を押してください。</p>
                     
                     <div class="grid md:grid-cols-2 gap-4">
-                        <!-- ボタン 1 -->
                         <div class="bg-gray-700 p-4 rounded-lg flex items-start border border-gray-600">
                             <div class="bg-primary text-white font-bold w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mr-3">1</div>
                             <div>
@@ -213,7 +208,6 @@
                             </div>
                         </div>
 
-                        <!-- ボタン 2 -->
                         <div class="bg-gray-700 p-4 rounded-lg flex items-start border border-gray-600">
                             <div class="bg-primary text-white font-bold w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mr-3">2</div>
                             <div>
@@ -222,7 +216,6 @@
                             </div>
                         </div>
 
-                        <!-- ボタン 3 -->
                         <div class="bg-gray-700 p-4 rounded-lg flex items-start border border-gray-600 md:col-span-2">
                             <div class="bg-primary text-white font-bold w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mr-3">3</div>
                             <div>
@@ -243,13 +236,10 @@
     </main>
 
     <script>
-        // アコーディオンの開閉制御スクリプト
         document.querySelectorAll('.accordion-button').forEach(button => {
             button.addEventListener('click', () => {
                 const content = button.nextElementSibling;
                 const icon = button.querySelector('.accordion-icon');
-                
-                // toggle class
                 content.classList.toggle('open');
                 icon.classList.toggle('open');
             });
